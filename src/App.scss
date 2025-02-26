@@ -1,0 +1,543 @@
+$blue: #4e4ffa;
+
+* {
+  box-sizing: border-box;
+  transition: all .25s ease;
+  scroll-behavior: smooth;
+
+}
+
+
+.wrapper {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+}
+.disFlex {              
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header {
+  @extend .disFlex;
+  @extend .wrapper;
+  justify-content: space-between;
+
+  nav {
+    a {
+      margin-right: 20px;
+      text-decoration: none;
+      color: white;
+      padding-top: 20px;
+    }
+  }
+}
+.floating {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #4e4ffa;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  &:hover {
+    transition: all 0.3s ease-in-out;
+    scale: 1.1;
+  }
+}
+.overlay {
+  position: absolute; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(2, 2, 255, 0.267);
+  z-index: -1;  
+}
+
+.HeroBanner > *:not(#overlay) {
+  z-index: 2;  
+}
+
+.HeroBanner {
+  color: white;
+  background-image: url(./images/images/welcome-hero/welcome-banner.jpg);
+  background-size: 100%;
+  position: relative;
+  background-repeat: no-repeat;
+  height: 600px;
+  z-index: 2;
+  color: white;
+  padding: 50px;
+  @extend .disFlex;
+  flex-direction: column;
+  margin: 0 0 124px 0;
+
+  a {
+    &:hover {
+      color: blue;
+    }
+  }
+  h1 {
+    margin-top: 100px;
+    font-size: 40px;
+  }
+
+  h5 {
+    margin-top: 20px;
+    width: 85%;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  button {
+    padding: 10px;
+    background-color: blue;
+    width: 200px;
+    border: none;
+    border-radius: 2px;
+    color: white;
+    margin-top: 60px;
+  }
+}
+
+section {
+  @extend .disFlex;
+  flex-direction: column;
+  margin-bottom: 150px;
+}
+
+.Card-Section {
+  @extend .wrapper;
+  padding: none;
+  @extend .disFlex;
+  margin-top: 100px;
+  justify-content: space-between;
+
+  .card {
+    border: solid 1px black;
+    flex-direction: column;
+    text-align: center;
+    @extend .disFlex;
+    width: 300px;
+    height: 400px;
+    
+    &:hover {
+      transform: scale(1.1);
+      background-color: #4e4ffa;
+      color: white;
+    }
+img {
+    width: 100px;
+    height: 100px;
+      margin-bottom: 30px;
+    }
+    h3 {
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+
+    h5 {
+    margin: 0 10px 0 10px;  
+    font-size: 15px;
+}
+    .data {
+      margin-bottom: 30px;
+    }
+
+    .line {
+      width: 30px;
+      height: 2px;
+      margin-top: 20px;
+      background: blue;
+    }
+  }
+}
+.Featured {
+@extend .wrapper; 
+height: 100%;
+.heading {
+    margin-bottom: 50px;
+    @extend .wrapper;
+    @extend .disFlex;
+    flex-direction: column;
+    margin-top: 50px;
+    h4 {
+      margin-bottom: 0;
+      font-size: 20px;
+    }
+  
+    .line {
+      margin-top: 20px;
+      width: 50px;
+      height: 2px;
+      background: blue;
+    }
+  }
+  #Featured-cards {
+    @extend .disFlex; 
+     margin-top:"50px";
+     justify-content: space-between;
+     .card {
+      width:250px;
+       height:"400px";
+       border: none;
+       .images {
+        height:"240px";
+         width:100%;
+         display:"flex";
+        justify-content:"space-between";
+         align-items:"center" ;
+        flex-direction:"column";
+        border: solid 1px #291c77;
+        transition: 0.3s;
+        overflow: hidden;
+        .data {
+          color:"#72748e";
+
+          h5 {
+            color:black; 
+            margin-top:"20px"
+          }
+          span {
+            color:"black"; margin-bottom:"20px";
+          }
+        }
+        img {
+          width:100%; height:80%;  padding:40px;
+        }
+        span {
+          width:100%;
+           border-top:solid 1px grey ;
+            height:20%;
+            margin-top:10%;
+             padding:8px 0 0 8px;
+        }
+ h5 {
+          height: 20%;
+        }
+       }
+     }
+  }
+}
+.brand {
+  @extend .wrapper;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+
+  img {
+    &:hover {
+      transform: scale(1.3);
+    }
+  }
+}
+footer {
+  height: 100px;
+  @extend .disFlex;
+  margin-top: 100px;
+  #foot {
+    @extend .wrapper;
+    @extend .disFlex;
+    justify-content: space-between;
+    color: white;
+
+    .brand-logos {
+      width: 100px;
+      @extend .disFlex;
+      justify-content: space-between;
+    }
+  }
+}
+#Foot {
+  background-color: #291c77;
+  margin-top: 100px;
+  footer{
+    height: 50px;
+    @extend .wrapper;
+    .cpyRght{
+      @extend .wrapper;
+      @extend .disFlex;
+      justify-content: space-between;
+      color: white;
+      margin-right: 20px;
+      
+  }
+  .brand-logos {
+    width: 400px;
+    @extend .disFlex;
+    justify-content: space-between;
+    a:hover {
+      transform: scale(1.3);
+    }
+  }
+  
+}
+}
+
+
+// @media (max-width: 1280) {
+//   .wrapper {
+//     max-width: 1200px; 
+//   }
+
+//   .HeroBanner {
+//     background-size: cover;
+//     height: 650px; 
+//   }
+
+//   .Card-Section {
+//     justify-content: space-around;  
+//   }
+
+//   .card {
+//     width: 280px;
+//     height: 380px;  
+//   }
+
+//   #Featured-cards {
+//     .card {
+//       width: 260px;
+//       height: 380px;  
+//     }
+//   }
+
+//   .brand {
+//     margin-top: 70px; 
+//     display: flex;
+//     justify-content: space-between;
+//   }
+
+//   footer {
+//     height: 120px;  
+//   }
+
+//   #Foot footer {
+//     height: 70px;  
+//   }
+// }
+
+@media (min-width: 1400px) and (max-width: 1920px) {
+  .wrapper {
+    margin: auto;
+    max-width: 1920px;
+  }
+
+  header {
+    margin-bottom: 100px;
+    h2 {
+      font-size: 40px;
+    }
+    nav {
+      font-size: 24px;
+    }
+  }
+
+  .HeroBanner {
+    background-size: cover;
+    height: 900px;
+  }
+
+  .main-Section {
+    margin-bottom: 300px;
+    h1 {
+      font-size: 60px;
+    }
+    h5 {
+      font-size: 20px;
+
+    }
+    button {
+      width: 400px;
+      height: 50px;
+    }
+  }
+  .Card-Section {
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+    .card {
+      width: 400px;
+      height: 420px;
+    }
+  }
+
+
+
+  .Featured {
+    #Featured-cards {
+      margin-top: 50px ;
+      margin-right: 50px;
+      margin-left: 150px;
+      width: 1600px;
+      .card {
+        width: 300px;
+        height: 400px;
+        border: none;
+      }
+  }
+  }
+
+  .brand {
+    width: 1600px;
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  footer {
+    height: 150px;
+    @extend .disFlex;
+  }
+
+  #Foot footer {
+    height: 80px;
+    width: 1500px;
+  }
+}
+// tablet
+@media (min-width: 768px) and (max-width: 1280px) {
+  .wrapper {
+    max-width: 1280px; 
+  }
+  header {
+    margin-top: 20px;
+  }
+  .HeroBanner {
+    height: 600px;
+    h1 {
+      font-size: 36px; 
+    } 
+    h5 {
+
+      font-size: 18px;
+    }
+  }
+
+  .Card-Section {
+    flex-direction: row;
+    margin-top: 50px;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%; /* Make cards take up more space */
+    margin-bottom: 20px;
+  }
+
+  #Featured-cards {
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0 90px 0 100px;
+  }
+
+  .brand {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  
+   footer {
+    justify-content: space-between;
+    flex-direction: row;
+    padding-left: 70px;
+    .brand-logos {
+      margin-right: 70px;
+    }
+  }
+}
+
+
+@media (min-width: 360px) and (max-width: 450px) {
+  .wrapper {
+    max-width: 450px; 
+  }
+
+  header {
+    margin-top: 100px;
+    width: 360px;
+    font-size: 8px;
+    padding-right: 500px;
+    display: grid;
+    grid-template-columns: 2;
+    h2 {
+      font-size: 10px;
+    }
+    nav {
+      width: 20px;
+      a {
+        margin-left: 0;
+      }
+      margin-right: 50px;
+    }
+  }
+
+  .HeroBanner {
+    height: 400px; 
+    padding: 20px; 
+    h1 {
+
+      font-size: 10px;
+    }
+    h5 {
+      margin-bottom: 0;
+      width: 260px;
+      font-size: 10px; 
+    }
+    button {
+      margin-top: 0;
+      width: 100px;
+      font-size: 10px;
+    }
+  }
+
+  .Card-Section {
+    margin-top: 20px;
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%; /* Make cards full width on mobile */
+    margin-bottom: 20px;
+    flex-direction: column;
+  }
+.Featured {
+  #Featured-cards {
+    
+    flex-direction: column;
+  }
+}
+  .brand {
+    flex-direction: column; /* Stack brand images vertically */
+    margin-top: 40px;
+    margin-left: 130px;
+    img {
+      width: 100px;
+      margin-bottom: 30px;
+    }
+  }
+
+  footer {
+    flex-direction: column; /* Stack footer content */
+    margin-top: 20px;
+    font-size: 7px;
+  }
+
+  
+  #Foot footer {
+    flex-direction: row;
+    margin-left: 20px; /* Stack footer content */
+    .brand-logos {
+      flex-direction: row;
+      justify-content: center;
+      a {
+         margin-right: 20px;
+
+       }
+    }
+  }
+}
