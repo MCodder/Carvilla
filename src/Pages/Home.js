@@ -8,10 +8,10 @@ function Home() {
     return(
        <>
         <div className='HeroBanner'>
-       <section className="main-Section">
        <Header  />
+       <section className="main-Section">
         <h1>GET YOUR DESIRE CAR IN RESONABLE PRICE</h1>
-        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit praesentium quaerat tenetur amet distinctio quae doloribus optio magni corrupti.</h5>
+        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit praesentium quaerat   tenetur amet distinctio quae doloribus optio magni corrupti.</h5>
         <button>Contact Us</button>
        <div className='overlay'></div>
        </section>

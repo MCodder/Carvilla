@@ -23,19 +23,19 @@ function Footer() {
         </div>
         <div className="brand-logos">
           <a href="https://www.facebook.com/login/" className="faceBook">
-          <FaFacebookF style={{color:"#72748e", height:"10px"}} />
+          <FaFacebookF style={{color:"white", height:"10px"}} />
           </a>
           <a href="https://www.instagram.com/accounts/login/?hl=en" className="instagram">
-          <FaInstagramSquare style={{color:"#72748e", height:"10px"}} />
+          <FaInstagramSquare style={{color:"white", height:"10px"}} />
           </a>
           <a href="https://github.com/login" className="Github">
-          <FaLinkedinIn style={{color:"#72748e", height:"10px"}} />
+          <FaLinkedinIn style={{color:"white", height:"10px"}} />
           </a>
           <a href="https://twitter-login-page.vercel.app/" className="twiter">
-          <FaPinterestP style={{color:"#72748e", height:"10px"}} />
+          <FaPinterestP style={{color:"white", height:"10px"}} />
           </a>
           <a href="https://www.behance.net/" className="twiter">
-          <FaBehance style={{color:"#72748e", height:"10px"}} />
+          <FaBehance style={{color:"white", height:"10px"}} />
           </a>
         </div>
       </footer>
