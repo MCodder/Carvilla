@@ -105,12 +105,12 @@ const style ={
     <Header stl={style}/>
     </div>
     <div className="row mb-5" style={{marginTop:'50px'}}>
-      <h2 style={{marginTop:'35px',display:'flex', justifyContent:'center',}}>Create Featured Cars</h2>
+      <h2 style={{marginTop:'35px',display:'flex', justifyContent:'center',}}>Create Service Cars</h2>
       <div>
           <div className="card mt-3">
             {/* heading */}
             <div className="card-header">
-              <h3>Update features Cars</h3>
+              <h3>Update Service Cars</h3>
             </div>
             {/* body */}
             <div className="card-body">
@@ -163,7 +163,7 @@ const style ={
                   // ])
                   updateProfile(e)
                 }}>
-                  Edit Profile
+                  Edit Service
                 </Button>
               </Form>
             </div>
@@ -224,7 +224,7 @@ const style ={
                 <Button variant="primary" type="submit" onClick={(e)=>{
                   createProfile(e)
                 }}>
-                  Add Profile
+                  Add Service
                 </Button>
               </Form>
             </div>
