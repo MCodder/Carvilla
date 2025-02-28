@@ -22,12 +22,10 @@ function Header({style}) {
        >
         <Link to="/" style={{textDecoration:"none", color:"White", fontSize:"30px", marginTop:"10px"}}>CARVILLA</Link>
         <form  
-        // style={{display:"flex", height:"40px", border:"black"}}
         onSubmit={onSearch}
          method="post"
          >
            <input type="text" name="search" placeholder="Search Your Car..."
-          //  style={{backgroundColor:"transparent", border:"solid 2px black" ,color:"white", marginTop:"30px"}}
            value={query} 
            />
               <button type="submit" value={"search"}

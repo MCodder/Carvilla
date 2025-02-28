@@ -3,7 +3,7 @@
 
 - 🔭 I’m currently working on [CarVilla](https://github.com/MCodder/Carvilla)
 
-- 🌱 I’m currently learning **React.js, node.js, javascript, express**
+- 🌱 I’m currently learning **Mern Stack Development**
 
 - 👨‍💻 All of my projects are available at [https://github.com/MCodder](https://github.com/MCodder)
 
