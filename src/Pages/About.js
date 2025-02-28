@@ -20,7 +20,7 @@ function AboutUs() {
 
                 <Header style={style} />
             </div>
-            <div className='aboutus' style={{ marginTop: '60px' }}>
+            <div className='aboutus' style={{ marginTop: '60px', display:"flex", flexDirection:"column", justifyContent:"center", alignItems:"center"}}>
                 <h2 style={{ marginBottom: '35px' }}>Hello Buddy</h2>
                 <span style={{ MarginBottom: '15px', marginTop: "35px" ,marginLeft:"40px",fontSize:"20px",
                     fontWeight:"400"
